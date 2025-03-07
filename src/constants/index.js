@@ -11,9 +11,7 @@ import {
   redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
-  figma,
   docker,
   meta,
   starbucks,
@@ -21,8 +19,10 @@ import {
   shopify,
   carrent,
   jobit,
-  tripguide,
   threejs,
+  Stock1,
+  RealEstate,
+  Ecommerce
 } from "../assets";
 
 export const navLinks = [
@@ -46,7 +46,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
@@ -54,7 +54,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Cloud Engineer",
     icon: creator,
   },
 ];
@@ -93,10 +93,6 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
     name: "Three JS",
     icon: threejs,
   },
@@ -105,13 +101,13 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
     name: "docker",
     icon: docker,
   },
+  // {
+  //   name:"Azure",
+  //   icon: azure,
+  // }
 ];
 
 const experiences = [
@@ -198,7 +194,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Ecommerce",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -207,7 +203,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "SpringBoot",
         color: "green-text-gradient",
       },
       {
@@ -215,11 +211,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: Ecommerce,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Real Estate",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -228,36 +224,32 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Tailwind",
         color: "green-text-gradient",
       },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
+    image: RealEstate,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Inventory management",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "Angular",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Bootstrap",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: ".NET",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: Stock1,
     source_code_link: "https://github.com/",
   },
 ];
