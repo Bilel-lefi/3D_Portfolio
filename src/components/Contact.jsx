@@ -2,7 +2,7 @@ import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { useState, useRef } from "react";
 import { styles } from "../styles";
-import { EarthCanvas } from "./Canvas";
+import { EarthCanvas } from "./canvas/index";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -80,7 +80,7 @@ const Contact = () => {
                 text-white rounded-lg
                 outline-none border-none
                  font-medium"
-                 required
+              required
             />
           </label>
           <label className="flex flex-col">
@@ -96,7 +96,7 @@ const Contact = () => {
                 text-white rounded-lg
                 outline-none border-none
                  font-medium"
-                 required
+              required
             />
           </label>
           <label className="flex flex-col">
@@ -112,7 +112,7 @@ const Contact = () => {
                 text-white rounded-lg
                 outline-none border-none
                  font-medium"
-                 required
+              required
             />
           </label>
           <button
