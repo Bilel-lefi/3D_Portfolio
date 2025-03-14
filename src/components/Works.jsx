@@ -52,7 +52,7 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <section id="works" className="py-20 px-10">
+    <section id="work" className="py-20 px-10">
       <div className="text-center mb-12">
         <p className="text-lg text-secondary">My Work</p>
         <h2 className="text-3xl md:text-4xl font-bold">Projects</h2>

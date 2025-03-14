@@ -1,26 +1,5 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
-import { styles } from "../styles";
 import { services } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
-import { SectionWrapper } from "../hoc";
-
-// const services = [
-//   {
-//     title: "Web Development",
-//     icon: "https://via.placeholder.com/64", // Remplacez par vos icônes réelles
-//   },
-//   {
-//     title: "Mobile Development",
-//     icon: "https://via.placeholder.com/64", // Remplacez par vos icônes réelles
-//   },
-//   {
-//     title: "UI/UX Design",
-//     icon: "https://via.placeholder.com/64", // Remplacez par vos icônes réelles
-//   },
-// ];
-
 const ServiceCard = ({ title, icon }) => {
   return (
     <div className="w-full sm:w-[250px] bg-gradient-to-r from-green-400 to-pink-500 p-[1px] rounded-[20px] shadow-xl transform hover:scale-105 transition duration-300">
