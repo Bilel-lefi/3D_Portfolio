@@ -29,7 +29,7 @@ const Navbar = () => {
             className="w-10 h-10 object-contain rounded-xl"
           />
           <p className="text-white text[18px] font-bold cursor-pointer">
-            Ahmed mighri
+           Bilel lefi
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-3">
