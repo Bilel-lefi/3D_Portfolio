@@ -1,42 +1,59 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { services } from "../constants";
-const ServiceCard = ({ title, icon }) => {
+import { SectionWrapper } from "../hoc";
+import { fadeIn, textVariant } from "../utils/motion";
+import { styles } from "../styles";
+
+const ServiceCard = ({ title, icon, index }) => {
   return (
-    <div className="w-full sm:w-[250px] bg-gradient-to-r from-green-400 to-pink-500 p-[1px] rounded-[20px] shadow-xl transform hover:scale-105 transition duration-300">
-      <div className="bg-gray-800 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-        <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-        <h3 className="text-white text-[20px] font-bold text-center">
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.15, 0.75)}
+      className="w-full sm:w-[240px]"
+    >
+      <div className="glass-card rounded-2xl py-8 px-6 min-h-[240px] flex flex-col justify-center items-center gap-5 group cursor-default">
+        <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors duration-300">
+          <img
+            src={icon}
+            alt={title}
+            className="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-300"
+          />
+        </div>
+        <h3 className="text-white text-[17px] font-semibold text-center">
           {title}
         </h3>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-10">
-      <div className="text-center">
-        <p className="text-lg text-gray-400">Introduction</p>
-        <h2 className="text-4xl font-bold">Overview</h2>
-      </div>
+    <>
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>Introduction</p>
+        <h2 className={styles.sectionHeadText}>Overview.</h2>
+      </motion.div>
 
-      <p className="mt-4 text-white text-[17px] max-w-3xl mx-auto leading-[30px]">
-        I'm a skilled software developer with experience in JavaScript and
-        TypeScript, specializing in frameworks like React, Angular, and Spring
-        Boot. I'm a quick learner who collaborates closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </p>
-      <div className="mt-20 flex flex-wrap gap-10 justify-center">
-        {" "}
-        {/* Center the cards for better layout */}
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[16px] max-w-3xl leading-[28px]"
+      >
+        Motivated Full-Stack Developer specializing in Next.js, React.js, and
+        .NET, with hands-on experience building performant and interactive web
+        applications. Complementary knowledge in Cloud deployment and
+        optimization with Docker, Kubernetes, and CI/CD pipelines. I'm
+        passionate about creating efficient, scalable solutions that solve
+        real-world problems.
+      </motion.p>
+
+      <div className="mt-16 flex flex-wrap gap-6 justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </section>
+    </>
   );
 };
 
-export default About;
+export default SectionWrapper(About, "about");

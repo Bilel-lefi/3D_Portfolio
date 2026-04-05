@@ -18,6 +18,13 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import azure from "./tech/azure.png";
+import postgresql from "./tech/postgresql.svg";
+import mysql from "./tech/mysql.svg";
+import sqlserver from "./tech/sqlserver.svg";
+import nextjs from "./tech/nextjs.svg";
+import expressjs from "./tech/expressjs.svg";
+import dotnet from "./tech/dotnet.svg";
+import csharp from "./tech/csharp.svg";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -28,6 +35,13 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import RealEstate from "./RealEstate.png";
 import Ecommerce from "./Ecommerce.png";
+import petszonee from "./petszonee.png";
+import mayabeauty from "./mayabeauty.png";
+import reservi from "./reservi.png";
+import advery from "./advery.png";
+import lws from "./lws.png";
+import forever from "./forever.png";
+
 export {
   logo,
   backend,
@@ -59,4 +73,17 @@ export {
   Stock1,
   RealEstate,
   Ecommerce,
+  petszonee,
+  mayabeauty,
+  reservi,
+  advery,
+  lws,
+  forever,
+  postgresql,
+  mysql,
+  sqlserver,
+  nextjs,
+  expressjs,
+  dotnet,
+  csharp,
 };
